@@ -28,6 +28,7 @@ Preencher dados do novo entregador e cadastrar
     Fill Text      css=input[name='name']             Taís Santos
     Fill Text      css=input[name='cpf']              04513364025
     Fill Text      css=input[name='email']            ${EMAIL}
+    Fill Text      css=input[name='whatsapp']         21998451230
     Fill Text      css=input[name='postalcode']       09090-502
     Click          text="Buscar CEP"
     Fill Text      css=input[name='address-number']   215
@@ -35,7 +36,8 @@ Preencher dados do novo entregador e cadastrar
     Click          text="Bicicleta"
     Upload File By Selector    //input[@type='file']    ${FILE}
     Click          text="Cadastre-se para fazer entregas"
-    Sleep    5s
+    Click          text="Fechar"
+    Sleep    3s
 
 
 Clicar em Buscar CEP sem preencher o campo
